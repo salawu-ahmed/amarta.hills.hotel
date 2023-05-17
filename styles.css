@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container__layout{
+    padding: 0 10rem;
+}
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.hero{
+    width: 100vw;
+    height: 60vh;
+    background: url(images/Amarta_hero.png);
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    align-self: self-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+    background-color: transparent;
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+/* second li in the nav ul parent */
+nav ul li:nth-child(2){
+    margin-right: 6rem;
+}
+ 
+.accommodation__section{
+     width: 100vw;
+     height: 55vh;
+     position: relative;
+     background-color: #3F3F3F;
+     color: #fff;
+}
+.accommodation{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.accommodation .left{
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+}
+.accommodation .left h2{
+    margin-bottom: 3rem;
+}
+.accommodation .left h2:after{
+    content: '';
+    width: 3rem;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+.accommodation .left .image{
+    position: absolute;
+    left: 4.5rem;
+}
+.accommodation .right{
+    width: 30%;
+    height: 100%;
+    text-align: justify;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* background-color: blue; */
+}
